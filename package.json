@@ -1,0 +1,61 @@
+{
+  "name": "@jhnnsrs/unkover",
+  "version": "0.0.7",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": " vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "p": "yarn publish --access public"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/unkover.umd.js",
+  "module": "./dist/unkover.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/unkover.mjs",
+      "require": "./dist/unkover.umd.js"
+    }
+  },
+  "dependencies": {
+    "@jhnnsrs/datalayer": "^0.0.4",
+    "aws4fetch": "^1.0.17",
+    "colormap": "^2.3.2",
+    "debounce": "^1.2.1",
+    "zarr": "^0.6.1"
+  },
+  "devDependencies": {
+    "@apollo/client": "^3.7.10",
+    "@jhnnsrs/arkitekt": "^0.0.6",
+    "@testing-library/react": "^13.4.0",
+    "@types/colormap": "^2.3.1",
+    "@types/debounce": "^1.2.1",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "apollo-upload-client": "^17.0.0",
+    "fakts": "^0.0.6",
+    "formik": "^2.2.9",
+    "graphql": "^16.6.0",
+    "happy-dom": "^6.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.4.1",
+    "react-router-dom": "^6.4.1",
+    "subscriptions-transport-ws": "^0.11.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vite-plugin-dts": "^1.6.3",
+    "vitest": "^0.23.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.4.1",
+    "react-router-dom": "^6.4.1"
+  }
+}
